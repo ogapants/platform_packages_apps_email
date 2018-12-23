@@ -497,7 +497,7 @@ public class EmailServiceUtils {
 
         // Update this calendar to have the new account type.
         final ContentValues values = new ContentValues();
-        values.put(CalendarContract.Calendars.ACCOUNT_TYPE, newType);
+        values.put(Calendars.ACCOUNT_TYPE, newType);
         resolver.update(oldCalendars, values,
                 Calendars.ACCOUNT_NAME + "=? AND " + Calendars.ACCOUNT_TYPE + "=?",
                 new String[] {name, oldType});
@@ -513,7 +513,7 @@ public class EmailServiceUtils {
 
         // Update this calendar to have the new account type.
         final ContentValues values = new ContentValues();
-        values.put(CalendarContract.Calendars.ACCOUNT_TYPE, newType);
+        values.put(Calendars.ACCOUNT_TYPE, newType);
         resolver.update(oldContacts, values, null, null);
     }
 

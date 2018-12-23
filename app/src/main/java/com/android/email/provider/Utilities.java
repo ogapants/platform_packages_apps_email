@@ -197,7 +197,7 @@ public class Utilities {
 
     /**
      * Converts a string representing a file mode, such as "rw", into a bitmask suitable for use
-     * with {@link android.os.ParcelFileDescriptor#open}.
+     * with {@link ParcelFileDescriptor#open}.
      * <p>
      * @param mode The string representation of the file mode.
      * @return A bitmask representing the given file mode.

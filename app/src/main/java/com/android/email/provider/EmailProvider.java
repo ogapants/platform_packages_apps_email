@@ -175,7 +175,7 @@ public class EmailProvider extends ContentProvider
             "com.android.email.activity.setup.AccountSettingsFragment";
     /**
      * Notifies that changes happened. Certain UI components, e.g., widgets, can register for this
-     * {@link android.content.Intent} and update accordingly. However, this can be very broad and
+     * {@link Intent} and update accordingly. However, this can be very broad and
      * is NOT the preferred way of getting notification.
      */
     private static final String ACTION_NOTIFY_MESSAGE_LIST_DATASET_CHANGED =
@@ -2378,7 +2378,7 @@ public class EmailProvider extends ContentProvider
     }
 
     /**
-     * Returns a {@link java.io.File} object pointing to the body content file for the message
+     * Returns a {@link File} object pointing to the body content file for the message
      *
      * @param c Context for finding files dir
      * @param messageId id of message to locate

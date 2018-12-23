@@ -178,7 +178,7 @@ public class AccountReconciler {
         // AccountManager account
         for (final Account providerAccount : emailProviderAccounts) {
             final String providerAccountName = providerAccount.mEmailAddress;
-            final EmailServiceUtils.EmailServiceInfo infoForAccount = EmailServiceUtils
+            final EmailServiceInfo infoForAccount = EmailServiceUtils
                     .getServiceInfoForAccount(context, providerAccount.mId);
 
             // We want to delete the account if there is no matching Account Manager account for it

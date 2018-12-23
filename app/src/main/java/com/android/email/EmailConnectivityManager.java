@@ -58,7 +58,7 @@ public class EmailConnectivityManager extends BroadcastReceiver {
     private final Context mContext;
     // The wake lock used while running (so we don't fall asleep during execution/callbacks)
     private final WakeLock mWakeLock;
-    private final android.net.ConnectivityManager mConnectivityManager;
+    private final ConnectivityManager mConnectivityManager;
 
     // Set when we abort waitForConnectivity() via stopWait
     private boolean mStop = false;
