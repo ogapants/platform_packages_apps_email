@@ -98,7 +98,7 @@ public abstract class MessageChangeLogTable {
      * @param uri The content uri for this table.
      * @param projection The projection to use for this query.
      * @param accountId The account we want to update.
-     * @return A {@link android.database.Cursor} containing all rows, in id order.
+     * @return A {@link Cursor} containing all rows, in id order.
      */
     private static Cursor getRowsToProcess(final ContentResolver cr, final Uri uri,
             final String[] projection, final String accountId) {

@@ -853,7 +853,7 @@ public class Mailbox extends EmailContent implements EmailContent.MailboxColumns
         mLastFullSyncTime = in.readLong();
     }
 
-    public static final Parcelable.Creator<Mailbox> CREATOR = new Parcelable.Creator<Mailbox>() {
+    public static final Creator<Mailbox> CREATOR = new Creator<Mailbox>() {
         @Override
         public Mailbox createFromParcel(Parcel source) {
             return new Mailbox(source);

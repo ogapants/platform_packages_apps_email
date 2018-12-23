@@ -104,8 +104,8 @@ public class Credential extends EmailContent implements Parcelable, BaseColumns 
    /**
     * Supports Parcelable
     */
-   public static final Parcelable.Creator<Credential> CREATOR
-           = new Parcelable.Creator<Credential>() {
+   public static final Creator<Credential> CREATOR
+           = new Creator<Credential>() {
        @Override
        public Credential createFromParcel(Parcel in) {
            return new Credential(in);

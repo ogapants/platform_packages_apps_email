@@ -34,7 +34,7 @@ import java.util.Set;
 import javax.net.ssl.*;
 import javax.net.ssl.SSLSocketFactory;
 
-public class SSLSocketFactoryWrapper extends javax.net.ssl.SSLSocketFactory {
+public class SSLSocketFactoryWrapper extends SSLSocketFactory {
     private final SSLSocketFactory mFactory;
     private final boolean mSecure;
     private final int mHandshakeTimeout;

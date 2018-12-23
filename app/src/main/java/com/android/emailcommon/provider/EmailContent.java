@@ -623,7 +623,7 @@ public abstract class EmailContent {
         @Override
         public void restore(final Context context, final Cursor cursor) {
             warnIfUiThread();
-            mBaseUri = EmailContent.Body.CONTENT_URI;
+            mBaseUri = Body.CONTENT_URI;
             mMessageKey = cursor.getLong(CONTENT_MESSAGE_KEY_COLUMN);
             // These get overwritten below if we find a file descriptor in the respond() call,
             // but we'll keep this here in case we want to construct a matrix cursor or something
@@ -1641,16 +1641,16 @@ public abstract class EmailContent {
             mUiDownloadedSize = in.readInt();
          }
 
-        public static final Parcelable.Creator<EmailContent.Attachment> CREATOR
-                = new Parcelable.Creator<EmailContent.Attachment>() {
+        public static final Creator<Attachment> CREATOR
+                = new Creator<Attachment>() {
             @Override
-            public EmailContent.Attachment createFromParcel(Parcel in) {
-                return new EmailContent.Attachment(in);
+            public Attachment createFromParcel(Parcel in) {
+                return new Attachment(in);
             }
 
             @Override
-            public EmailContent.Attachment[] newArray(int size) {
-                return new EmailContent.Attachment[size];
+            public Attachment[] newArray(int size) {
+                return new Attachment[size];
             }
         };
 

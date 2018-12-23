@@ -412,8 +412,8 @@ public class HostAuth extends EmailContent implements Parcelable {
     /**
      * Supports Parcelable
      */
-    public static final Parcelable.Creator<HostAuth> CREATOR
-            = new Parcelable.Creator<HostAuth>() {
+    public static final Creator<HostAuth> CREATOR
+            = new Creator<HostAuth>() {
         @Override
         public HostAuth createFromParcel(Parcel in) {
             return new HostAuth(in);

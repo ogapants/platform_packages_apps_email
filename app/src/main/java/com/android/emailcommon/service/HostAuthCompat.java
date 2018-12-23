@@ -116,8 +116,8 @@ public class HostAuthCompat implements Parcelable {
     /**
      * Supports Parcelable
      */
-    public static final Parcelable.Creator<HostAuthCompat> CREATOR
-            = new Parcelable.Creator<HostAuthCompat>() {
+    public static final Creator<HostAuthCompat> CREATOR
+            = new Creator<HostAuthCompat>() {
         @Override
         public HostAuthCompat createFromParcel(Parcel in) {
             return new HostAuthCompat(in);

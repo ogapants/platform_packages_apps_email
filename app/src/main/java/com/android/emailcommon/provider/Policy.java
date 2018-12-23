@@ -453,7 +453,7 @@ public final class Policy extends EmailContent implements EmailContent.PolicyCol
     /**
      * Supports Parcelable
      */
-    public static final Parcelable.Creator<Policy> CREATOR = new Parcelable.Creator<Policy>() {
+    public static final Creator<Policy> CREATOR = new Creator<Policy>() {
         @Override
         public Policy createFromParcel(Parcel in) {
             return new Policy(in);
