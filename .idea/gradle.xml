@@ -8,6 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android-bitmap" />
+            <option value="$PROJECT_DIR$/android-chips" />
+            <option value="$PROJECT_DIR$/android-common" />
+            <option value="$PROJECT_DIR$/android-photoviewer" />
             <option value="$PROJECT_DIR$/android-unifiedemail" />
             <option value="$PROJECT_DIR$/app" />
           </set>

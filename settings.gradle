@@ -1,1 +1,1 @@
-include ':app', ':android-unifiedemail'
+include ':app', ':android-unifiedemail', ':android-bitmap', ':android-chips', ':android-common', ':android-photoviewer'
